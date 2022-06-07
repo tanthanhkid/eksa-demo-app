@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: demo-app-config-prd
+  name: demo-app-config-dev
   namespace: flux-system
 spec:
   interval: 30s
@@ -9,4 +9,4 @@ spec:
     branch: master
   secretRef:
     name: demo-app
-  url: https://github.exampledomain.com/tanthanhkid/eksa-demo-app.git
+  url: https://github.com/tanthanhkid/eksa-demo-app.git
